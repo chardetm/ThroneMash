@@ -1,0 +1,11 @@
+{% for match in derniers_matchs %}
+    <li class="list-group-item">
+        {{ match.nom_gagnant }}
+        <span class="gagne"> +{{ (match.nouvel_elo_gagnant-match.ancien_elo_gagnant)|int }}</span>
+        <span class="details">({{ match.ancien_elo_gagnant|int }} → {{ match.nouvel_elo_gagnant|int }})</span>
+        <br>
+        {{ match.nom_perdant }}
+        <span class="perdu"> -{{ (match.ancien_elo_perdant - match.nouvel_elo_perdant)|int }}</span>
+        <span class="details">({{ match.ancien_elo_perdant|int }} → {{ match.nouvel_elo_perdant|int }})</span>
+    </li>
+{% endfor %}

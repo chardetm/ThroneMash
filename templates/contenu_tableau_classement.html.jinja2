@@ -1,0 +1,7 @@
+{% for personnage in classement %}
+    <tr>
+        <th scope="row">{{ loop.index }}</th>
+        <td>{{ personnage["nom"] }}</td>
+        <td>{{ personnage["elo"]|int }}</td>
+    </tr>
+{% endfor %}

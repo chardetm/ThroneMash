@@ -1,0 +1,32 @@
+{% extends "layout.html.jinja2" %}
+
+
+{% block contenu %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-12">
+                <h3>Classement</h3>
+                <table class="table table-bordered table-striped table-hover table-sm">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Personnage</th>
+                        <th scope="col">ELO</th>
+                    </tr>
+                    </thead>
+                    <tbody id="contenu-tableau-classement">
+                        <!-- Rempli par Ajax -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-6 col-12">
+                <h3>Derniers matchs</h3>
+                <ul class="list-group" id="contenu-liste-derniers-matchs">
+                    <!-- Rempli par Ajax -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

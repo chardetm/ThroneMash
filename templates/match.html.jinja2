@@ -1,0 +1,42 @@
+{% extends "layout.html.jinja2" %}
+
+
+{% block contenu %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <p class="centered">Quel est votre personnage préféré ?</p>
+            </div>
+        </div>
+        <div class="row" id="ligne-chargement">
+            <div class="col-12">
+                <p class="centered">Chargement...</p>
+            </div>
+        </div>
+        <div class="row align-items-center" id="ligne-match">
+            <div class="col-sm-5 col-12">
+                <div class="card" id="card1">
+                    <div class="card-img-top" id="image1"></div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="nom1"></h5>
+                        <p class="card-text" id="acteur1"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2 col-12">
+                <p class="centered">ou</p>
+            </div>
+            <div class="col-sm-5 col-12">
+                <div class="card" id="card2">
+                    <div class="card-img-top" id="image2"></div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="nom2"></h5>
+                        <p class="card-text" id="acteur2"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
